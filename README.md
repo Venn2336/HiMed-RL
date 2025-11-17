@@ -35,7 +35,7 @@ The HiMed-RL pipeline (Figure 2) integrates a Policy Model, a Reward Model, and 
     * **$\mathbb{R}_{\mathfrak{token}}$:** Calculates fluency based on a BLEU-inspired metric.
     * **$\mathbb{R}_{concept}$:** Measures factual coverage using ROUGE-L, METEOR, and a bonus for key medical entities.
     * **$\mathbb{R}_{semantic}$:** The LLM Verifier provides scores for clinical accuracy, relevance, and completeness.
-3.  **Dynamic Reward Adjustment:** The total reward $\mathbb{R}_{total}(t)$ is a dynamically weighted sum of the low-level $\mathbb{R}_{low-level}$ and semantic $\mathbb{R}_{semantic}$ rewards. The weights $\alpha_{1}(t), \alpha_{2}(t)$ shift focus from fluency to semantic integrity as training progresses.
+3.  **Dynamic Reward Adjustment:** The total reward ($\mathbb{R}_{total}(t)$) is a dynamically weighted sum of the low-level ($\mathbb{R}_{low-level}$) and semantic ($\mathbb{R}_{semantic}$) rewards. The weights ($\alpha_{1}(t), \alpha_{2}(t)$) shift focus from fluency to semantic integrity as training progresses.
 4.  **Optimization:** We use the Group Reward Policy Optimization (GRPO) algorithm to optimize the policy model based on the composite reward.
 
 ## 📊 Performance Highlights
