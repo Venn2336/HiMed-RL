@@ -13,7 +13,7 @@ Our model, **HiMed-3B**, achieves state-of-the-art (SOTA) performance on both in
 ## 👋 Introduction
 Automatic Medical Report Generation (MRG) holds great promise for alleviating the documentation burden on doctors. However, while current methods can produce fluent sentences, they often fail to meet clinical standards of factual accuracy and logical consistency.
 
-To bridge this gap, we proposed **HiMed-RL**. It moves beyond simple N-gram text matching by deconstructing reward learning into three synergistic levels[cite: 12]:
+To bridge this gap, we proposed **HiMed-RL**. It moves beyond simple N-gram text matching by deconstructing reward learning into three synergistic levels:
 
 1.  **Token-level:** Ensures linguistic fluency and readability.
 2.  **Concept-level:** Enforces factual grounding by aligning key medical terms with expert knowledge.
@@ -52,7 +52,7 @@ Our model achieves the highest scores on the semantic-level **RATE** metric acro
 
 On the Padchest-GR dataset, HiMed-RL demonstrates impressive generalization capabilities, significantly outperforming strong baselines. This confirms the model learns intrinsic MRG patterns rather than relying on rote memorization.
 
-[cite_start]*(See Table 4 for generalization results)*
+*(See Table 4 for generalization results)*
 
 ## ⚙️ Implementation Details
 
